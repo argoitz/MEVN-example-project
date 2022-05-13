@@ -44,18 +44,18 @@ cd MEVN-example-project
         .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 ```
 
-- Go to backend path and install the dependencies
+- Go to back path and install the dependencies
 
 ```
-cd backend
+cd back
 npm install
 ```
 
-- Go to client path and install the dependencies
+- Go to front path and install the dependencies
 
 ```
 cd ..
-cd client
+cd front
 npm install
 ```
 
