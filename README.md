@@ -36,14 +36,15 @@ cd MEVN-example-project
 ```
     !If you want to use your cloud DB you need to make this modifications:
     - Create your own Cluster in [mongodb](https://cloud.mongodb.com/)
-    - Create .env file fom .env.example and make the appropriate modifications
-
-        cp backend/.env.example backend/.env
 
     Go to back/database.js and replace localUri with uri variable in line 11
 
         .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
 ```
+
+- Create .env file fom .env.example and make the appropriate modifications if you want to use cloud DB
+
+  cp backend/.env.example backend/.env
 
 - Go to back path and install the dependencies
 
@@ -88,6 +89,7 @@ winpty docker exec -it MEVN-Frontend bash
 ```
 git clone --recurse-submodules https://github.com/argoitz/MEVN-example-project.git
 cd MEVN-simple-project
+cp backend/.env.example backend/.env
 cd back
 npm install
 cd ..
