@@ -59,6 +59,12 @@ cd front
 npm install
 ```
 
+- Return back
+
+```
+cd ..
+```
+
 - Run Docker container (Dont panic, the frontend takes a bit longer to deploy, about 30 seconds longer. Check the MEVN-frontend container in your docker-desktop)
 
 ```
