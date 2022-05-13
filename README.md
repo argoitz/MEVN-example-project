@@ -87,11 +87,12 @@ winpty docker exec -it MEVN-Frontend bash
 ```
 git clone  https://github.com/argoitz/MEVN-example-project
 cd MEVN-simple-project
-cd backend
+cd back
 npm install
 cd ..
-cd client
+cd front
 npm install
+cd ..
 docker-compose up -d
 ```
 
