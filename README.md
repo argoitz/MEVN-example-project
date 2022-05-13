@@ -35,7 +35,8 @@ cd MEVN-example-project
 
 ```
     !If you want to use your cloud DB you need to make this modifications:
-    - Create .env file in the backend and make the appropriate modifications if you want to use cloud DB
+    - Create your own Cluster in [mongodb](https://cloud.mongodb.com/)
+    - Create .env file fom .env.example and make the appropriate modifications
 
         cp backend/.env.example backend/.env
 
