@@ -1,0 +1,32 @@
+version: "3.8"
+
+services: 
+  backend:
+    container_name: MEVN-backend
+    restart: always
+    build:
+      context: ./back
+      dockerfile: ./Dockerfile
+    image: back
+    ports: 
+      - "3001:3001"
+    links:
+      - mongo
+    volumes:
+      - ./back:/usr/src/app
+      - /usr/src/app/node_modules # This line fix "bcrypt invalid ELF header" error 
+  mongo:
+    container_name: mongodb
+    image: mongo
+    ports: 
+      - "27018:27017"
+  frontend:
+    container_name: MEVN-Frontend
+    restart: always
+    build:
+      context: ./front
+      dockerfile: ./Dockerfile
+    ports: 
+      - "8080:8080"
+    volumes:
+      - ./front:/usr/src/app
