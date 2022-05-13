@@ -86,7 +86,7 @@ winpty docker exec -it MEVN-Frontend bash
 # Command list
 
 ```
-git clone  https://github.com/argoitz/MEVN-example-project
+git clone --recurse-submodules https://github.com/argoitz/MEVN-example-project.git
 cd MEVN-simple-project
 cd back
 npm install
